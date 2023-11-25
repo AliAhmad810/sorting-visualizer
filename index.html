@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content ="width = device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel ="stylesheet" href ="style.css"/>
+</head>
+
+<body>
+    <div class="page_header">
+        <h1>SORTING VISUALIZER</h1>
+    </div>
+    <div id ="container"></div>
+    <hr>
+    <hr>
+    <div class="array_slider">
+        <input type="range" min="1" max="50" value="25" class="slider" id="arraySizeSlider">
+        <p id="sliderText">Array Size: <span id="arraySliderValue"></span></div>p>
+    </div>
+    <div class="animation_speed">
+        <input type="range" min="1" max="100" value="50" class="slider" id="animSpeedSlider">
+        <p id="sliderText">Animation Speed: <span id="animSpeedValue"></span> ms</div>p>
+    </div>
+    <div class="custom-select" style="width:200px;">
+        <select>
+          <option value="0">Select car:</option>
+          <option value="1">Audi</option>
+          <option value="2">BMW</option>
+          <option value="3">Citroen</option>
+          <option value="4">Ford</option>
+          <option value="5">Honda</option>
+          <option value="6">Jaguar</option>
+          <option value="7">Land Rover</option>
+          <option value="8">Mercedes</option>
+          <option value="9">Mini</option>
+          <option value="10">Nissan</option>
+          <option value="11">Toyota</option>
+          <option value="12">Volvo</option>
+        </select>
+      </div>
+    <hr>
+    <div class="option_buttons">
+        <button class="btn" onClick="init(parseInt(slider.value))">Reset Array</button>
+        <button class="btn" onClick="sort()">Sort Array</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
